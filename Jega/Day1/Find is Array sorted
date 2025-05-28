@@ -1,0 +1,16 @@
+public class isArraySorted {
+    public static void main(String[] args) {
+        boolean isArraySorted = findArraySorted(new int[]{1,2,3,4,5,1});
+        System.out.println(isArraySorted);
+    }
+    public static boolean findArraySorted(int[] nums) {
+        for(int i=0;i<nums.length-1;i++)
+        {
+            if(nums[i]>nums[i+1])
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+}
