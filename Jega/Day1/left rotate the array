@@ -1,0 +1,17 @@
+import java.util.Arrays;
+public class leftRotateElementInArray {
+    public static void main(String[] args) {
+        int arr[]=leftRotateArray(new int[]{1,2,5,6,7,8,5});
+        System.out.println(Arrays.toString(arr));
+    }
+    public static int[] leftRotateArray(int[] nums) {
+        int firstIndexValue = nums[0];
+        int arrLen = nums.length;
+        for(int i=0;i<nums.length-1;i++)
+        {
+            nums[i]=nums[i+1];
+        }
+        nums[arrLen-1]=firstIndexValue;
+        return nums;
+    }
+}
