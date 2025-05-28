@@ -1,0 +1,16 @@
+public class findSmallestIndex {
+    public static void main(String[] args) {
+        int smallestIndex = findSmallestIndex(new int[]{1,2,5,6,7,8,5}, 5);
+        System.out.println(smallestIndex);
+    }
+    public static int findSmallestIndex(int[] nums, int target) {
+        for(int i=0;i<nums.length;i++)
+        {
+            if(target==nums[i])
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
+}
