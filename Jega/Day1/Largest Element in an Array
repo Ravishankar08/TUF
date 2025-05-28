@@ -1,1 +1,16 @@
-
+public class findLargestNum {
+    public static void main(String[] args) {
+       largestElement(new int[]{138493384,2,3,4,5,1000,100000});
+    }
+    public static int largestElement(int[] nums) {
+        int largestNumber = nums[0];
+        for(int i=0;i<nums.length;i++)
+        {
+            if(largestNumber<nums[i])
+            {
+                largestNumber=nums[i];
+            }
+        }
+        return largestNumber;
+    }
+}
