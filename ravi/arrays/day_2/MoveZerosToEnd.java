@@ -6,20 +6,20 @@ public class MoveZerosToEnd {
         moveZerosToEnd(new int[]{0,1,2,3,0,1,2,3,0,2,0,0,0,10,10});
     }
 
-    private static void moveZerosToEnd(int[] nums) {
+    private static void moveZerosToEnd(int[] a) {
         int updated = 0;
-        int n = nums.length;
-        LargestElementInArray.printArray(nums);
+        int n = a.length;
+        LargestElementInArray.printArray(a);
         for (int i=0;i<n;i++){
-            if (nums[i] != 0){
-                nums[updated] = nums[i];
+            if (a[i] != 0){
+                a[updated] = a[i];
                 updated++;
             }
         }
         for (int i=updated;i<n;i++){
-            nums[i] = 0;
+            a[i] = 0;
         }
 
-        LargestElementInArray.printArray(nums);
+        LargestElementInArray.printArray(a);
     }
 }
